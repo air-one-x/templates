@@ -6,8 +6,7 @@
   "scripts": {
     "build": "react-power-static build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "dev": "vite"
+    "start": "npm run build && node server.js"
   },
   "dependencies": {
     "express": "^5.1.0",
