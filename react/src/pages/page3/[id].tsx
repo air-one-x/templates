@@ -24,9 +24,11 @@ export const getStaticProps = async ({ params }: any) => {
 const TodoPage: React.FC<{ data: any }> = ({ data }) => {
   return (
     <div>
-      <p>Todo ID: {data.id}</p>
-      <p>{data.title}</p>
-      <button onClick={() => console.log(data)}>Click me!</button>
+      <p className="title">Todo ID: {data?.id}</p>
+      <p className="text">{data?.title}</p>
+      <button className="button is-primary" onClick={() => console.log(data)}>
+        Click me!
+      </button>
     </div>
   );
 };

@@ -15,7 +15,14 @@ const Page1: React.FC<{ data: any }> = ({ data }) => {
     console.log("Page1 loaded !");
   }, []);
 
-  return <p>{data?.title}</p>;
+  return (
+    <div>
+      <p className="title">Todo ID: {data?.id}</p>
+      <button className="button is-primary" onClick={() => console.log(data)}>
+        Click me!
+      </button>
+    </div>
+  );
 };
 
 export default Page1;
